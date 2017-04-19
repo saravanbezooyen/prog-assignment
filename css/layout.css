@@ -1,3 +1,7 @@
+*{
+	margin: 0;
+	padding: 0;
+}
 body
 {
 	background-color: white;
@@ -16,13 +20,13 @@ th{
 li,a
 {
 	display: inline;
-	padding-left: 30px;
+	padding: 5px;
 	text-decoration: none;
 	color: #c28f60;
 	font-family: verdana;
 	font-size: 16px;
 }
-li a:hover
+li a:hover, td a:hover
 {
 	text-decoration: underline;
 	color: brown;
@@ -43,14 +47,21 @@ header
 	background-image: url('../images/bigbook.gif');
 	background-repeat: no-repeat;
 	background-position: right;
-	height: 270px;
+	height: 230px;
+	
+}
+header.books{
+	height: 150px;
+}
+nav ul li{
+	display: inline-block;
 }
 h1
 {
 	font-family: courier;
 	font-size: 80px;
 	padding-left: 50px;
-	color: brown
+	color: brown;
 }
 h3
 {
@@ -73,7 +84,7 @@ h4
 table
 {
 border-collapse:collapse;
-width: 700px;
+width: 900px;
 margin-left: auto;
 margin-right: auto;
 }
