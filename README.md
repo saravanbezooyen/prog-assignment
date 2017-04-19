@@ -15,3 +15,32 @@ Blijf niet te lang hangen als iets niet werkt, ga dan verder met andere pagina�
 Maak van al je bestanden een zip file en lever deze in via It’s Learning.
 
 Het is niet toegestaan, nadat je het framework hebt gekopieerd, nog te werken met sourcetree of github.
+
+## index pagina
+* Maak een overzicht van alle schrijvers (zie voorbeeld index.html)
+* Zorg dat achter elke schrijver via de link ‘show’ je doorgestuurd wordt naar de show pagina
+
+## show pagina
+*	Maak een overzicht van alle boeken bij een bepaalde schrijver (zie voorbeeld, books.html)
+*	Zorg ervoor dat als je van de index ‘home’ pagina kom via de link ‘show’, alleen de boeken van de gekozen schrijver worden getoond
+*	Zorg dat je een boek kan toevoegen, door op de ‘add book’ link te klikken
+*	Zorg ervoor dat je een book kan deleten door op de ‘delete’ link te klikken (automatisch doorsturen naar de index ‘home’ pagina)
+*	Zorg ervoor dat je een book kan editten door op de ‘edit’ link te klikken (automatisch doorsturen naar de index ‘home’ pagina)
+
+## edit pagina
+* Zorg ervoor dat je alle gegevens hier kan aanpassen
+*	Zorg ervoor dat je na de submit keuze automatisch wordt doorgestuurd naar de index ‘home’ pagina
+*	*Extra*, zorg ervoor dat je na de submit automatisch wordt doorgestuurd naar het overzicht van de boeken behorende bij de zojuist aangepaste schrijver. Bijv. Ik sta op het overzicht van Stephen King en kies ervoor om het book ‘It’ aan te passen. Na het aanpassen wordt ik dan automatisch doorgestuurd naar het overzocht van boeken van Stephen King. (daar kwam ik vandaan)
+* *Extra*, zorg ervoor dat bij de Author i.p.v. het id zijn juiste naam staat. Dat je hier d.m.v. een dropdown ok kan kiezen voor een andere author
+
+## add pagina
+*	Zorg ervoor dat je hier een boek kan toevoegen. (zie voorbeeld add.html)
+*	Bij author id vul je het desbetreffende id in van die author
+*	Zorg dat je nadat een boek is toegevoegd automatisch wordt doorgestuurd naar de index ‘home’ pagina
+*	*Extra*, zorg ervoor dat je na de submit automatisch wordt doorgestuurd naar het overzicht van de boeken van het zojuist aangemaakte boek, van die schrijver
+*	*Extra*, zorg ervoor dat je d.m.v. een dropdown menu een author kan kiezen
+*	*Extra*, zorg ervoor dat deze dropdown info uit de database komt
+
+## delete pagina
+*	Zorg dat een boek verwijderd wordt uit de database, nadat ik op de ‘delete’ link heb geklikt.
+*	*Extra*, zorg ervoor dat ik na de delete automatisch wordt doorgestuurd naar het overzicht van de boeken behorende bij de schrijver van het zojuist verwijderde boek.
