@@ -47,6 +47,8 @@ Het is niet toegestaan, nadat je het framework hebt gekopieerd, nog te werken me
 
 ## voeg boeken toe
 Voeg de twee volgende boeken toe.
+
+
 name | Emily Barr id = 4
 title | Klasgenoten
 publisher | Uitgeverij Maarten
