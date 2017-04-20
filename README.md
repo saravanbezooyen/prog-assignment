@@ -44,3 +44,16 @@ Het is niet toegestaan, nadat je het framework hebt gekopieerd, nog te werken me
 ## delete pagina
 *	Zorg dat een boek verwijderd wordt uit de database, nadat ik op de ‘delete’ link heb geklikt.
 *	**Extra**, zorg ervoor dat ik na de delete automatisch wordt doorgestuurd naar het overzicht van de boeken behorende bij de schrijver van het zojuist verwijderde boek.
+
+## voeg boeken toe
+Voeg de twee volgende boeken toe.
+name | Emily Barr id = 4
+title | Klasgenoten
+publisher | Uitgeverij Maarten
+summary	| Susie, een succesvolle kunstenares die met haar geliefde in Zuid-Frankrijk woont, besluit in een opwelling een reünie te organiseren. Ze nodigt haar vier beste schoolvriendinnen uit om ze te imponeren met haar mooie huis, haar lekker foute vriend en haar zonnige bestaan. Tenminste, dat maakt ze zichzelf wijs. 
+	
+name | Tom Clancy  id = 5
+title | Ongelijke Strijd
+publisher | Zwarte Beertjes
+summary | Jack Ryan, historicus, ex-marinier en CIA-medewerker, kijkt tijdens zijn vakantie in Londen binnen een half uur de dood twee keer recht in de ogen. De eerste keer wordt hij op een haar na door een dubbeldekker overreden wanneer hij bij het oversteken de verkeerde kant op kijkt. 
+
