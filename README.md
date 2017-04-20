@@ -48,12 +48,13 @@ Het is niet toegestaan, nadat je het framework hebt gekopieerd, nog te werken me
 ## voeg boeken toe
 Voeg de twee volgende boeken toe.
 
-
+--- | ---
 name | Emily Barr id = 4
 title | Klasgenoten
 publisher | Uitgeverij Maarten
 summary	| Susie, een succesvolle kunstenares die met haar geliefde in Zuid-Frankrijk woont, besluit in een opwelling een reünie te organiseren. Ze nodigt haar vier beste schoolvriendinnen uit om ze te imponeren met haar mooie huis, haar lekker foute vriend en haar zonnige bestaan. Tenminste, dat maakt ze zichzelf wijs. 
 	
+--- | ---
 name | Tom Clancy  id = 5
 title | Ongelijke Strijd
 publisher | Zwarte Beertjes
