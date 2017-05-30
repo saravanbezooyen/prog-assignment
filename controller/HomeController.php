@@ -2,5 +2,5 @@
 
 function index()
 {
-	render("book/index");	
+	render("author/index");	
 }

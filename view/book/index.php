@@ -3,19 +3,17 @@
 	</header>
 	<table>
 		<tr>
-			<th>Name</th>
-			<th>Address</th>
-			<th>Zipcode</th>
-			<th>City</th>
-			<th>Books</th>
+			<th>Title</th>
+			<th>Publisher</th>
+			<th>Summary</th>
+			<th>Author</th>
 		</tr>
 		<tr>
-		<?php foreach($authors as $author){ ?>
-			<td><?php echo $author["author_name"]; ?></td>
-			<td><?php echo $author["author_address"]; ?></td>
-			<td><?php echo $author["author_zipcode"]; ?></td>
-			<td><?php echo $author["author_city"]; ?></td>
-			<td><a href="<?= URL ?>book/">Show</a></td>
+		<?php foreach($books as $book){ ?>
+			<td><?php echo $book["book_title"]; ?></td>
+			<td><?php echo $book["book_publisher"]; ?></td>
+			<td><?php echo $book["book_summary"]; ?></td>
+			<td><?php echo $book["author_id"]; ?></td>
 		<?php } ?>
 		</tr>
 	</table>

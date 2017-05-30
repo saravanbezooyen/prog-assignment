@@ -15,13 +15,13 @@
 			<th>Summary</th>
 			<th colspan="2">Action</th>
 		</tr>
-		<tr>
 		<?php foreach($books as $book){ ?>
+			<tr>
 			<td nowrap="true">Ready Player One</td>
 			<td nowrap="true">Crown Publishing Group</td>
 			<td><?php echo $book["book_summary"] ?></td>
 			<td><a href="book/edit/<?php echo $book["book_id"]; ?>">Edit</a></td>
 			<td><a href="book/delete/<?php echo $book["book_id"]; ?>">Delete</a></td>
-		<?php } ?>
 		</tr>
+		<?php } ?>
 	</table>
