@@ -14,12 +14,18 @@ function getBook($book_id)
 	return $query->fetch();
 }
 
-function getAllBooks() 
+function getAllBooks($author_id) 
 {
 	$db = openDatabaseConnection();
 
-	$sql = "SELECT * FROM books";
+	$sql = "SELECT `books`.*, `authors`.author_name
+			FROM `books`
+			INNER JOIN `authors`
+			ON `books`.author_id = `authors`.author_id
+			WHERE `authors`.author_id = :author_id";
+
 	$query = $db->prepare($sql);
+	$query->bindParam(':author_id', $author_id);
 	$query->execute();
 
 	$db = null;
@@ -41,7 +47,7 @@ function editBook()
 	
 	$db = openDatabaseConnection();
 
-	$sql = "UPDATE author_plaza SET book_title = :book_title, book_publisher = :book_publisher, book_summary = :book_summary, author_id = :author_id WHERE book_id = :book_id";
+	$sql = "UPDATE books SET book_title = :book_title, book_publisher = :book_publisher, book_summary = :book_summary, author_id = :author_id WHERE book_id = :book_id";
 	$query = $db->prepare($sql);
 	$query->execute(array(
 		':book_title' => $book_title,
@@ -63,7 +69,7 @@ function deleteBook($book_id = null)
 	
 	$db = openDatabaseConnection();
 
-	$sql = "DELETE FROM author_plaza WHERE book_id=:book_id ";
+	$sql = "DELETE FROM books WHERE book_id=:book_id ";
 	$query = $db->prepare($sql);
 	$query->execute(array(
 		':book_id' => $book_id));
@@ -86,7 +92,7 @@ function createBook()
 	
 	$db = openDatabaseConnection();
 
-	$sql = "INSERT INTO author_plaza (book_title, book_publisher, book_summary, author_id) VALUES (:book_title, :book_publisher, :book_summary, :author_id)";
+	$sql = "INSERT INTO books (book_title, book_publisher, book_summary, author_id) VALUES (:book_title, :book_publisher, :book_summary, :author_id)";
 	$query = $db->prepare($sql);
 	$query->execute(array(
 		':book_title' => $book_title,

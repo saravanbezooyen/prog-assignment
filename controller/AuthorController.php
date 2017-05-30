@@ -40,9 +40,9 @@ function editSave()
 	header("Location:" . URL . "author/index");
 } 
 
-function delete($book_id)
+function delete($author_id)
 {
-	if (!deleteAuthor($book_id)) {
+	if (!deleteAuthor($author_id)) {
 		header("Location:" . URL . "error/index");
 		exit();
 	}

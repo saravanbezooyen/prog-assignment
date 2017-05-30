@@ -1,6 +1,6 @@
 <h2>Boek toevoegen</h2>
 	<div class="form">
-	<form action="<?= URL ?>/createSave" method="post">
+	<form action="<?= URL ?>book/createSave" method="post">
 	<label>
 		<p><input type="text" name="book_title" placeholder="Title"></p>
 		<p><input type="text" name="book_publisher" placeholder="Pubisher"></p>

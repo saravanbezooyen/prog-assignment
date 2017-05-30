@@ -1,11 +1,16 @@
 <?php
 
 require(ROOT . "model/BookModel.php");
+require(ROOT . "model/AuthorModel.php");
 
-function index()
+function index($author_id)
 {
 	render("book/books", array(
-	'books' => getAllBooks()));
+		'books' => getAllBooks($author_id),
+		'author' => getAuthor($author_id)
+	)
+);
+
 }
 
 function create()
@@ -20,13 +25,14 @@ function createSave()
 		exit();
 	}
 
-	header("Location:" . URL . "book/index");
+	header("Location:" . URL . "book/index/".$_POST['author_id']);
 }
 
 function edit($book_id)
 {
 	render("book/edit", array(
-		'book' => getBook($book_id)
+		'book' => getBook($book_id),
+		'authors' => getAllAuthors()
 	));
 }
 
@@ -37,15 +43,16 @@ function editSave()
 		exit();
 	}
 
-	header("Location:" . URL . "book/index");
+	header("Location:" . URL . "book/index/".$_POST['author_id']);
 } 
 
 function delete($book_id)
-{
+{ 	
+	$book = getBook($book_id);
 	if (!deleteBook($book_id)) {
 		header("Location:" . URL . "error/index");
 		exit();
 	}
 
-	header("Location:" . URL . "book/index");
+	header("Location:" . URL . "book/index/".$book['author_id']);
 }
